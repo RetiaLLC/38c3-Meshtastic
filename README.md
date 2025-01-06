@@ -81,8 +81,7 @@ Now, let's add an antenna to the ANT1 hole. This can be a wire or coil antenna s
 
 ![](https://cdn.shopify.com/s/files/1/2779/8142/files/signal-2024-12-27-182411_003_480x480.jpg?v=1735320333)
 
-# **Optional: U.FL connector
-**
+# **Optional: U.FL connector**
 
 Finally, if you would like to add a clip-on antenna, you can add a U.FL connector. Be careful! This is a small part that's easy to melt.
 
