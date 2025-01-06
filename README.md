@@ -10,7 +10,7 @@ The Nibble is designed to act as your first Meshtastic node, with room for upgra
 
 # Schematics:
 
-![](https://cdn.shopify.com/s/files/1/2779/8142/files/Screenshot_2024-12-20_at_1.38.11_AM_480x480.png?v=1736140232)
+![](nibble_pinout.png)
 
 
 RP2040 version:
