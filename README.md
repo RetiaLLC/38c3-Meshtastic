@@ -8,6 +8,11 @@ The design was prototyped by Kody Kinzie, art was created by Felix Orozco, and P
 
 The Nibble is designed to act as your first Meshtastic node, with room for upgrades in antennas and sensors. It can be placed in an elevated area within a sealed 1 inch (25mm) PVC pipe to act as a router, weather station, or fixed client and accessed over Wi-Fi, Bluetooth or serial.
 
+# Schematics:
+
+![](https://cdn.shopify.com/s/files/1/2779/8142/files/Screenshot_2024-12-20_at_1.38.11_AM_480x480.png?v=1736140232)
+
+
 RP2040 version:
 The Nibble can be assembled from an RP2040 Zero instead of an ESP32s3 Zero. While this prevents a Wi-Fi or Bluetooth connection, these nodes make good low-cost router nodes.
 
