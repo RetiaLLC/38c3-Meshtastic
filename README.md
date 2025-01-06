@@ -1,4 +1,4 @@
-The Nibble is a mini Meshtastic node created for 38c3 for my talk: "[**Hacker's Guide to Meshtastic: Off-Grid, Encrypted LoRa Meshnets for Cheap!**](https://media.ccc.de/v/38c3-hacker-s-guide-to-meshtastic-off-grid-encrypted-lora-meshnets-for-cheap "Hacker's Guide to Meshtastic: Off-Grid, Encrypted LoRa Meshnets for Cheap!")"
+The Nibble is a mini Meshtastic node created for 38c3 and my talk: "[**Hacker's Guide to Meshtastic: Off-Grid, Encrypted LoRa Meshnets for Cheap!**](https://media.ccc.de/v/38c3-hacker-s-guide-to-meshtastic-off-grid-encrypted-lora-meshnets-for-cheap "Hacker's Guide to Meshtastic: Off-Grid, Encrypted LoRa Meshnets for Cheap!")"
 
 
 ![](https://cdn.shopify.com/s/files/1/2779/8142/files/signal-2024-12-27-182411_011_480x480.jpg?v=1735320333)
