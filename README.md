@@ -89,6 +89,8 @@ Finally, if you would like to add a clip-on antenna, you can add a U.FL connecto
 
 To flash your Nibble, you can flash a compiled binary, or compile your own. It's much easier to flash compiled firmware than it is to compile on your own.
 
+The easiest way to get a compiled build onto your Nibble is the browser flasher at [scriptkitty.sh](https://scriptkitty.sh "scriptkitty.sh"), which hosts current Meshtastic firmware for both Nibble versions. It replaces the old nugget.dev flasher. Use Chrome or Edge — it needs Web Serial, which Safari doesn't support. Flashing happens directly between your browser and the board.
+
 The instructions for flashing the ESP32s3 based Nibble are different than for the RP2040 version, so follow the correct one for your Nibble type below.
 
 ## RP2040 Nibble:
@@ -97,7 +99,9 @@ Hold down the BOOT button while plugging in your Nibble.
 
 ![](https://cdn.shopify.com/s/files/1/2779/8142/files/Screenshot_2025-01-05_at_8.37.19_PM_480x480.png?v=1736138285)
 
-Once it shows up as a connected USB drive, Drag and drop the "firmware.uf2" file into the drive. The firmware will automatically install and reboot.
+Once it shows up as a connected USB drive, drag and drop a firmware .uf2 file onto the drive. The firmware will automatically install and reboot.
+
+For the current build, go to [scriptkitty.sh](https://scriptkitty.sh "scriptkitty.sh"), open the **Open Source Nibble (RP2040)** section, and click "Download .uf2" on the Meshtastic card. The `RP2040_Nibble_firmware.uf2` file in this repo is the older 38c3-era build and still works.
 
 **ESP32s3 Nibble:**
 
@@ -107,31 +111,21 @@ Hold down the "B" button while plugging in your Nibble.
 
 You can use a web browser or command line to install your firmware.
 
-First, download the BIN file on the Github: [https://github.com/RetiaLLC/38c3-Meshtastic/blob/main/nibble\_flasher.zip](https://github.com/RetiaLLC/38c3-Meshtastic/blob/main/nibble_flasher.zip)
-
 ### Web Browser:
 
-Unzip the folder and navigate to [Nugget.dev](https://nugget.dev "Nugget.dev") in a chrome browser.
+Navigate to [scriptkitty.sh](https://scriptkitty.sh "scriptkitty.sh") in a Chrome or Edge browser.
 
-Select "Connect your nugget"
+Open the **Nibble** section and pick the Meshtastic card for the **Open Source Nibble (ESP32-S3)**, then click "Flash". Select your Nibble from the drop-down list of serial ports when the browser asks.
 
-![](https://cdn.shopify.com/s/files/1/2779/8142/files/Screenshot_2025-01-05_at_8.51.59_PM_480x480.png?v=1736139223)
+When it's done, unplug it and plug it back in to run the new firmware.
 
-Select your Nibble from the drop-down list of serial ports.
-
-### ![](https://cdn.shopify.com/s/files/1/2779/8142/files/Screenshot_2025-01-05_at_8.52.03_PM_480x480.png?v=1736139222)
-
-Click "Upload custom binary" and select the "firmware-nibble-esp32s3-master.bin" file inside the folder you unzipped.
-
-![](https://cdn.shopify.com/s/files/1/2779/8142/files/Screenshot_2025-01-05_at_8.52.19_PM_480x480.png?v=1736139222)
-
-Click "Erase" and "Program" to flash your Nibble. When it's done, unplug it and plug it back in to run the new firmware.
+If you'd rather flash the 38c3-era build archived here, download [nibble\_flasher.zip](https://github.com/RetiaLLC/38c3-Meshtastic/blob/main/nibble_flasher.zip), unzip it, and drop `firmware-nibble-esp32s3-master.bin` into the "Flash your own firmware" box at the bottom of scriptkitty.sh.
 
 ### Command line:
 
 You'll need [esptool](https://docs.espressif.com/projects/esptool/en/latest/esp32/ "esptool") installed to continue.
 
-Unzip the folder and run the following command from within the unzipped folder:
+Download [nibble\_flasher.zip](https://github.com/RetiaLLC/38c3-Meshtastic/blob/main/nibble_flasher.zip), unzip the folder, and run the following command from within the unzipped folder:
 
 **./device-install.sh -f firmware-nibble-esp32s3-master.bin**
 
